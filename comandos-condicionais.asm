@@ -9,7 +9,8 @@
 .text
 
 	#=========================================================================
-
+	#Programa para saber se o número é PAR ou IMPAR
+	
 	#imprimindo mensagem para o usuario
 	#li $v0, 4
 	#la $a0, msg
@@ -45,6 +46,7 @@
 	#syscall #faça
 	
 	#===============================================================================
+	#Programa para saber se o número é MAIOR, MENOR ou IGUAL a zero
 	
 	#imprimindo mensagem para o usuario
 	li $v0, 4
