@@ -28,6 +28,7 @@
 		retorna $t0 e $t4
 </div>
 
+##
 <div>
 	<p>Código em Java:</p>
 	
@@ -82,7 +83,7 @@
             t4 = t4 + 1;
         }
         return t4;
+      }
     }
-}
 
 </div>
