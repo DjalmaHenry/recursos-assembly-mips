@@ -1,6 +1,6 @@
 #azul = $a1, amarelo = $a2, verde = $a3
-#Ganhos por cor: azul = $t0, amarelo = $t1, verde = $t2
-#Ganhos total diario = $t3
+#ganhos por cor: azul = $t0, amarelo = $t1, verde = $t2
+#ganhos total diario = $t3
 .main:
 	addi $a1, $zero, 3			#armazena 3 em $a0
 	add $a0, $zero, $a1			#adiciona $a1 a $a0
@@ -17,8 +17,9 @@
 	add $t3, $zero, $t0			#adiciona $t0 a $t3 
 	add $t3, $t3, $t1			#soma $t1 a $t3
 	add $t3, $t3, $t2			#soma $t2 a $t3
-	j Exit						#finaliza programa
+	j Exit					#finaliza programa
 
+#multiplica por 500 a quantidade de computadores
 calculaGanhos:
 	add $t4, $zero, $t4 			#adiciona 0 ao $t4 (contador)
 	add $t5, $zero, $t5			#adiciona 0 ao $t5 (resultado)
