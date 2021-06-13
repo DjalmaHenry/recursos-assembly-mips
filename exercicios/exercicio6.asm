@@ -19,14 +19,13 @@ Proc1:
 	Exit:
 		
 	#Divisão dos valores
-	addi $t0, $zero, 10			#adiciona 10 a $t0 (limite)
-	add $t1, $zero, $t1 			#adiciona 0 ao $t1 (contador)
+	addi $t0, $zero, 10			#adiciona 10 a $t0 (limite e divisor)
+	add $t1, $zero, $t1 			#adiciona 0 ao $t1 (contador e resultado)
 	Loop2:
 		beq $t4, $zero, Exit2	#se $t4 == 0, finaliza o loop
 		sub $t4, $t4, $t0		#soma - 10
 		addi $t1, $zero, 1 		#adiciona 1 ao $t1 (contador)
 		j Loop2				#volta para loop2
 	Exit2:
-		add $v0, $zero, $t1		#adiciona $t2 a $v0
+		add $v0, $zero, $t1		#adiciona $t1 a $v0
 		jr $ra				#retorna $ra
-		
