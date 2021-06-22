@@ -1,6 +1,7 @@
 <div>
 	<p>Explicação:</p>
-	<p>Se o valor de $a1 for par, múltiplo de 15 e maior ou igual a 82, os valores de $v0 e $v1 retornam 0. Ao contrário,o programa apresenta erro, pois o valor de retorno é 	     tão grande que o registrador não suporta salva-lo.</p>
+	<p>Se o valor de $a1 for par, múltiplo de 15 e maior ou igual a 82, os valores de $v0 e $v1 retornam 0. 
+	Ao contrário,o programa efetua uma Progressão aritmética, de razão 15.</p>
 </div>
 
 ##
