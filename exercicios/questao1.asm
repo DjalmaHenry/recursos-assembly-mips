@@ -5,23 +5,23 @@ Main:
 	sw $a0, 0($sp)			#salva A na pilha
 	sw $a1, 4($sp)			#salva B na pilha
 	sw $a2, 8($sp)			#salva X na pilha
-	sw $a3, 12($sp)		#salva Y na pilha
-	sw $ra, 16($sp)		#salva retorno
+	sw $a3, 12($sp)			#salva Y na pilha
+	sw $ra, 16($sp)			#salva retorno
 	
 	#Y^500
-	lw $a0, 12($sp)		#guarda Y em $a0
-	addi $a1, $zero, 500	#adiciona 500 em $a1
+	lw $a0, 12($sp)			#guarda Y em $a0
+	addi $a1, $zero, 500		#adiciona 500 em $a1
 	jal POT				#chama potencia
 	
 	#A*Y
 	add $a1, $zero, $v0		#guarda $v0 em $a1
 	lw $a0, 0($sp)			#guarda A em $a0
-	jal MULT				#chama multiplicacao
+	jal MULT			#chama multiplicacao
 	
 	#A/B
 	add $a3, $zero, $v1		#guarda $v1 em $a3
 	lw $a2, 4($sp)			#guarda B em $a2
-	jal DIV 				#chama divisao
+	jal DIV 			#chama divisao
 	
 	#A^X
 	add $a0, $zero, $v0		#guarda $v0 em $a0
